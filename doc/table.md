@@ -490,7 +490,7 @@ gater:add(nn.Linear(7,n))
 gater:add(nn.SoftMax())
 
 trunk = nn.ConcatTable()
-trunk:add(gater)
+trunk:add(gater)的哦
 trunk:add(experts)
 
 moe = nn.Sequential()
@@ -731,8 +731,8 @@ end
 Example:
 ```lua
 mlp=nn.DotProduct()
-x=torch.Tensor(1,2,3) 
-y=torch.Tensor(4,5,6)
+x=torch.Tensor({1,2,3}) 
+y=torch.Tensor({4,5,6})
 print(mlp:forward({x,y}))
 ```
 gives the output:
